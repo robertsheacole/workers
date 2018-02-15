@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Workers</title>
+    <script src="./app.js" async></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Workers are baller status!</h1>
+        <p>When you run a Web Worker you don't block the DOM! Check it out.</p>
+        <p>The gif will briefly pause when not running the worker.</p>
+
+        <img src="https://media.giphy.com/media/2eLAwdushm3cI/giphy.gif" alt="" async>
+        <img src="https://media.giphy.com/media/l2Sqc3POpzkj5r8SQ/giphy.gif" alt="" async>
+
+        <div class="buttons">
+            <button onclick="runWorker()">Run Worker</button>
+            <button onclick="runRegular()">Run Regular (no worker)</button>
+        </div>
+
+        <h5 class="loader">Creating all the things...</h5>
+    </div>
+</body>
+</html>
